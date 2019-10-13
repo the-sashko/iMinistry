@@ -9,6 +9,9 @@ git checkout -- .
 git checkout -f master
 git pull origin master
 
+rm -f data/config/sites.json
+cp config/sites.json data/config/sites.json
+
 /bin/bash scripts/build.sh
 /bin/bash scripts/run.sh
 
