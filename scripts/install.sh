@@ -9,7 +9,7 @@ mkdir bin
 mkdir data
 
 cp -r install/config data/config
-ln config/sites.json data/config/sites.json
+ln -s config/sites.json data/config/sites.json
 
 chmod -R 755 data
 chmod -R 755 bin
