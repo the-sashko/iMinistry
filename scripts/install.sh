@@ -6,6 +6,7 @@ scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null && pwd)"
 cd "$scriptDir/.."
 
 mkdir bin
+mkdir data
 
 cp -r install/config data/config
 ln config/sites.json data/config/sites.json
